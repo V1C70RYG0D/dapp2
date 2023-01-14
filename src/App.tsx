@@ -8,23 +8,21 @@ import EditProfile from './components/EditProfile';
 import Blogcard from './components/Blogcard/Blogcard';
 import Navbar from './components/common/Navbar';
 import Profile from './components/Profile/Profile';
-import {Login,balance} from './helpers/web3auth';
 import HomePage from './components/Home/Home';
 
 
 const App: React.FC = () => {
 return (
 <div>
-    <button onClick={Login}>Login</button>
-    <button onClick={balance} > ballence</button>
+    
 <Router>
 <Navbar />
 <Routes>
-    <Route path="/home" element={<HomePage/>}></Route>
+    <Route path="/" element={<HomePage/>}></Route>
 <Route path="/showmore" element={<PostPage  />}></Route>
 <Route path="/add" element ={<Add/>}></Route>
 <Route path="/edit" element ={<EditProfile/>}></Route>
-<Route path='/' element={<Blogcard/>}></Route>
+<Route path='/pages' element={<Blogcard/>}></Route>
     <Route  path='/profile' element={<Profile/>}></Route>
 </Routes>
 </Router>

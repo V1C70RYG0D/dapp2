@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css';
 import { motion } from "framer-motion";
+import { Login, Logout } from '../../helpers/web3auth';
+import { useState } from 'react';
 
 const textVariants = {
   hidden: { y: -100, opacity: 0 },
@@ -27,6 +29,19 @@ const imageVariants = {
 };
 
 function HomePage() {
+    const[user, setUser] = useState(null);
+const login = () => {
+        Login();
+        setUser(true);
+    }
+
+    const logout = () => {
+        Logout();
+        setUser(false);
+    }
+    const mainpage = () => {
+        window.location.href = "/pages";
+    }
   return (
     <div className="home-page">
       <motion.img
@@ -38,9 +53,12 @@ function HomePage() {
         alt="logo"
       />
       <motion.div variants={textVariants} initial="hidden" animate="visible">
-        <h1>My App</h1>
-        <p>A special and attractive app that does something amazing.</p>
+        <h1>BLOCS</h1>
+        <p>Building up Block-Chain Community</p>
       </motion.div>
+      <button onClick={login}>Login</button>
+    <button onClick={logout} >Logout</button>
+    <button onClick={mainpage}>Launch App</button>
     </div>
   );
 }
