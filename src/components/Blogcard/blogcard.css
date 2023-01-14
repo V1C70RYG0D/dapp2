@@ -1,0 +1,60 @@
+body{
+    font-family: 'Outfit';
+}
+.searchbar{
+    margin-left: 8vw;
+    margin-top: 2vh;
+}
+.searchinput{
+ padding-left: 3vw;
+    width: 45vw;
+    height: 6vh;
+    background: #F8F8FE;
+border: 2px solid #4C5ADC;
+border-radius: 8px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+}
+.searchimg{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 1vw;
+
+}
+.closeimg{
+    position: absolute;
+    margin-left: -2vw;
+    margin-top: 2vh;
+}
+.closeimg  :hover{
+cursor: pointer;
+}
+.sort-container{
+    display: flex;
+    margin-left: 8vw;
+    margin-top: 2vh;
+    justify-content: space-between;
+width: 30vw;
+}
+.sort-container p{
+    margin-top: 4px;
+    font-weight: 400;
+}
+.sort-tags{
+    height: 25px;
+width: 87px;
+/* margin-left: 4vw; */
+background: rgba(76, 90, 220, 0.12);
+border: 1px solid #4C5ADC;
+border-radius: 19px;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+/* gap: 10px; */
+}
+.sort-tags p{
+    margin-top: 3px;
+    margin-left: 13px;
+}

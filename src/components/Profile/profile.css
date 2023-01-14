@@ -1,0 +1,203 @@
+.profile-container{
+ display: flex;
+flex-direction: row;
+
+}
+.card-container-rem{
+    display: none;
+}
+.profile-left{
+    background: #FFFFFF;
+border: 1px solid #797979;
+width: 23vw;
+height: 100%;
+margin-left: 8vw;
+margin-top: 5vh;
+}
+.profile-leftimg{
+    margin-top: 10px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.profile-leftimg img{
+    width: 168px;
+height: 169px;
+border-radius: 94px;
+}
+.profile-leftimg h1{
+    font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+margin-top: 0;
+}
+.profile-leftimg p{
+
+    margin-top: -12px;
+    font-weight: 300;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+color: #797979;
+}
+.personal-info{
+    align-items: center;
+    font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #0A0B0F;
+width: 100%;
+}
+.personal-info p{
+    margin-top: -5px;
+    margin-left:30px ;
+    width: 85%;
+}
+.profile-right{
+    width: 70vw;
+    margin-top: 0vh;
+    height: 272px;
+}
+.profile-right h1{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+margin-left: 6vw;
+color: #000000;
+}
+.follow-profile{
+    font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+color: #000000;
+margin-left: 30px;
+}
+.editprofile-btn{
+    margin-top:14px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.editt{
+    color: #FFFFFF;
+    height: 38px;
+    width: 300px;
+background: #4C5ADC;
+border: 1px solid #4C5ADC;
+border-radius: 6px;
+}
+.card-container{
+    margin-top: 2vh;
+    width: 840px;
+    height: 300px;
+    margin-left: 6vw;
+    background: #FFFFFF;
+    /* elevated */
+    
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contentimg{
+display: flex;
+flex-direction: row;
+}
+
+.card-footer{
+display: flex;
+margin-left: 2vw;
+}
+.tagsblogs{
+    display: flex;
+    margin-top: 2vh;
+}
+.tags{
+    display: flex;
+    background: rgba(76, 90, 220, 0.12);
+border: 1px solid #4C5ADC;
+border-radius: 12px;
+width: 76px;
+height: 22px;
+color: #4C5ADC;
+font-size: 10px;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-right: 1.5vw;
+
+}
+.card-footerright{
+    display: flex;
+    margin-left: 3vw;
+}
+.img-blog img{
+height: 24vh;
+margin: 25px;
+margin-top: 30px;
+}
+.content-blog{
+    margin-left: 10px;
+    width: 80%;
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #0A0B0F;
+}
+.content-blog p{
+    font-weight: 600;
+    font-size: 18px;
+    color: #4C5ADC;
+    margin-top: -20px;
+}
+.cont span{
+    list-style: none;
+    color: #4C5ADC;
+    text-decoration: none;
+
+}
+.like{
+    display: flex;
+}
+.like img{
+    margin-left: 16vw;
+}
+.likescount{
+    margin: 3px;
+    font-weight: 400;
+font-size: 26px;
+line-height: 23px;
+text-align: center;
+color: #797979;
+}
+.prof-icons{
+    margin-top: -1vh;
+    width: 11vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.eddit{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+cursor: pointer;
+
+color: #797979;
+}
+.reemove{
+    margin-top: -9px;
+    font-weight: 400;
+    margin-left: 3px;
+font-size: 16px;
+line-height: 28px;
+cursor: pointer;
+color: #DE0000;
+}
