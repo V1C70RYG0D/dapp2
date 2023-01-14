@@ -1,0 +1,129 @@
+.overlay{
+    width: 100vw;
+    height: 1120%;
+    opacity: 0.8;
+    background-color: black;
+    position: fixed;
+    overflow-y: none;
+}
+.edit-profile-container{
+    width: 63vw;
+height: 62vh;
+position: absolute;
+z-index: 10000;
+left: 20%;
+right: 0%;
+top: 20%;
+bottom: 0%;
+background: #FFFFFF;
+border-radius: 4px;
+-webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+}
+.edit-profile__header{
+    display: flex;
+}
+.edit-profile__header h2{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 24px;
+margin-top: 36px;
+margin-left: 27px;
+    letter-spacing: 0.012em;
+    color: #000000;
+}
+.edit-profile__header p{
+    margin-left: 49vw;
+    margin-top: 3.5vh;
+width: 30px;
+font-size: 25px;
+    height: 24px;
+    font-weight: 700;
+    color: rgba(157, 157, 153, 1);
+    cursor: pointer;
+    /* background: #9D9D99;  */
+    /* border: 0.03125px solid #9D9D99; */
+}
+.edit-profile__content{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.edit-profile__picture{
+display: flex;
+flex-direction: column;
+}
+.edit-profile__picture img{
+    background: #D9D9D9;
+    height: 190px;
+    width: 190px;
+    border-radius: 100px;
+    
+}
+.edit-profile__picture input{
+    margin-top: 3vh;
+}
+.edit-profile__details{
+display: flex;
+flex-direction: column;
+margin-left: 0px;
+}
+.edit-profile__details input{
+    background: #F8F8FE;
+    mix-blend-mode: normal;
+    border: 1px solid #4C5ADC;
+    border-radius: 4px;
+    Width:641px;
+Height:38px;
+}
+
+.edit-profile__details textarea{
+    width: 642px;
+height: 121px;
+background: #F8F8FE;
+border: 1px solid #4C5ADC;
+border-radius: 4px;
+margin-top: 33px;
+}
+.edit-profile__footer{
+    margin-left: 48vw;
+    display: flex;
+    width: 13vw;
+    justify-content: space-between;
+}
+.edit-profile__footer button{
+    color: #FFFFFF;
+    width: 87px;
+    height: 40px;
+background: #4C5ADC;
+border: 0.5px solid #4C5ADC;
+border-radius: 6px;
+cursor: pointer;
+}
+.edit-profile__picture div{
+    color: #FFFFFF;
+ margin: 35px;
+cursor: pointer;
+}
+.inputcurrency{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+margin-top: 20px;
+color: #000000;
+}
+
+.selectpopup{
+background: #eaeaf7;
+mix-blend-mode: normal;
+color: #000000;
+border: 1px solid #4C5ADC;
+border-radius: 4px;
+Width
+:196px;
+Height:
+38px;
+}

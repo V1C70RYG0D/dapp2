@@ -44,6 +44,7 @@ width: 30vw;
 }
 .sort-tags{
     height: 25px;
+    margin-top: 5px;
 width: 87px;
 /* margin-left: 4vw; */
 background: rgba(76, 90, 220, 0.12);
@@ -56,5 +57,9 @@ cursor: pointer;
 }
 .sort-tags p{
     margin-top: 3px;
-    margin-left: 13px;
+    margin-left: 7px;
+    font-size: 16px;
+}
+.blogcards{
+    margin-top: -4vh;
 }

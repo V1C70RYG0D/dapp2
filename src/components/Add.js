@@ -1,24 +1,40 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import DataContext from '../Context/datacontext';
 import './Add.css';
+
+
 const AddBlog = () => {
-  const [visible, setVisible] = useState(false);
+  const {visible, setVisible} = useContext(DataContext);
 
   return (
-    <div className={`add-blog ${visible ? 'visible' : ''}`}>
+
+    <>
+    <div className="overlay">
+      
+      </div>
+    <div className="add-blog">
       <div className="add-blog__header">
         <h2>Add New Blog</h2>
-        <button onClick={() => setVisible(false)}>X</button>
+        <p onClick={() => setVisible(false)}>X</p>
       </div>
       <div className="add-blog__banner">
-        <input type="file" accept="image/*" />
+      <label class="button-fil" for="upload">Upload File</label>
+        <input type="file" accept="image/*" id='upload'/>
       </div>
+      <div className="addtext-container">
+
       <textarea placeholder="Write your blog here"></textarea>
       <input type="text" placeholder="Add tags (separated with comma)" />
-      <div className="add-blog__footer">
+      </div>
+     <div className="add-blog_footer">
+        <div className="edit-profile__footer">
         <button onClick={() => setVisible(false)}>Cancel</button>
         <button>Upload</button>
+        </div>
+     </div>
       </div>
-    </div>
+   
+    </>
   );
 };
 

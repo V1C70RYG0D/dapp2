@@ -56,9 +56,11 @@ const MAX_LENGTH=500;
       </div>
     
     <br />
-  <p>
+ <div className="uploaddate">
+
   Uploaded on : 13 January, 2022
-  </p>
+ </div>
+  
   </div>
   
      </div>
