@@ -8,7 +8,7 @@ import EditProfile from './components/EditProfile';
 import Blogcard from './components/Blogcard/Blogcard';
 import Navbar from './components/common/Navbar';
 import Profile from './components/Profile/Profile';
-import {Login} from './helpers/web3auth';
+import {Login,balance} from './helpers/web3auth';
 
 
 const App: React.FC = () => {
