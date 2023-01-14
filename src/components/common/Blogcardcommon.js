@@ -14,6 +14,8 @@ const Blogcardcommon = (props) => {
   const [stylecontainer, setStylecontainer]= useState("card-container1")
   const {follower, setFollower} =useContext(DataContext)
   const MAX_LENGTH = 500;
+ const handleclick = () => {
+   
 
   return (
     <div>
@@ -72,7 +74,7 @@ const Blogcardcommon = (props) => {
             </div>
             <div className="card-footerright1">
               <div className="showlink">
-          <button >Show Link On IPFS</button>
+          <button onClick={handleclick} >Show Link On IPFS</button>
         </div>
               <div className="like1">
                 <img src={likeimg} alt="" onClick={() => {
@@ -94,4 +96,4 @@ const Blogcardcommon = (props) => {
   )
 }
 
-export default Blogcardcommon
+export default Blogcardcommon;
