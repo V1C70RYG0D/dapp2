@@ -56,11 +56,13 @@ const handleCommentSubmit = () => {
 
 
 
-const handleCommentChange = (event) => {
-    setNewComment(event && event.target && event.target.value);
+const handleCommentChange = (e) => {
+        e.preventDefault();
+    setNewComment( e.target.value);
 }
 
-const handleAddComment = () => {
+const handleAddComment = (e) => {
+    e.preventDefault();
     const newCommentObj = {
         id: comments.length + 1,
         text: newComment,
@@ -77,28 +79,29 @@ const handleAddComment = () => {
                     <button className="post-page__back-button">Back</button>
                     </Link>
                     <div className="post-page__tags">
+                        Tags:
                         {tags.map(tag => (
                             <p className="post-page__tag" key={tag}>{tag}</p>
                         ))}
                     </div>
-                    <div className="post-page__creator">
-                        
-                        <button className="post-page__follow-btn" onClick={handleFollow}>{isFollowing ? "Unfollow" : "Follow"}</button>
-                    </div>
+              
                 </div>
                 <div className="post-page__content">
-                    <img src={post.image} alt="Post" className="post-page__image"  />
                     <h1 className="post-page__title">{post.title}</h1>
                     <div className="post-page__creator">
                     <img src={creator.profilePic} alt="Profile" className="post-page__creator-pic" />
                         <p className="post-page__creator-name">{creator.name}</p>
+                        <div className="post-page__creator">
+                        
+                        <button className="post-page__follow-btn" onClick={handleFollow}>{isFollowing ? "Unfollow" : "Follow"}</button>
+                    </div>
                         </div>
                     <p className="post-page__description">{post.description}</p>
                     <button className="post-page__like-btn" onClick={handleLike}>Like</button>
                 </div>
                 <div className="post-page__comments">
                     <h2 className="post-page__comments-title">Comments</h2>
-                    <form className="post-page__comment-form" onSubmit={handleCommentSubmit}>
+                    <form className="post-page__comment-form">
                         <input type="text" className="post-page__comment-input" placeholder="Add a comment..." value={newComment} onChange={handleCommentChange} />
                         <button className="post-page__comment-submit-btn" onClick={handleAddComment}>Submit</button>
                     </form>
