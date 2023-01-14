@@ -18,7 +18,7 @@ const Blogcardcommon = (props) => {
   return (
     <div>
       {props.data.map((item, i) => (
-        <div key={i} className={stylecontainer}>
+        <Link to="/showmore" style= { {textDecoration: 'none'}} ><div key={i} className={stylecontainer}>
           <div className="card-header1">
             <div className="image-user1">
               <img src={searchicon} alt="" />
@@ -71,6 +71,9 @@ const Blogcardcommon = (props) => {
               ))}
             </div>
             <div className="card-footerright1">
+              <div className="showlink">
+          <button >Show Link On IPFS</button>
+        </div>
               <div className="like1">
                 <img src={likeimg} alt="" onClick={() => {
                   item.content.likes = item.content.likes + 1
@@ -85,6 +88,7 @@ const Blogcardcommon = (props) => {
             </div>
           </div>
         </div>
+        </Link>
       ))}
     </div>
   )
