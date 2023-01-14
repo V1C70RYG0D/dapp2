@@ -9,6 +9,7 @@ import Blogcard from './components/Blogcard/Blogcard';
 import Navbar from './components/common/Navbar';
 import Profile from './components/Profile/Profile';
 import {Login,balance} from './helpers/web3auth';
+import HomePage from './components/Home/Home';
 
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ return (
 <Router>
 <Navbar />
 <Routes>
+    <Route path="/home" element={<HomePage/>}></Route>
 <Route path="/showmore" element={<PostPage  />}></Route>
 <Route path="/add" element ={<Add/>}></Route>
 <Route path="/edit" element ={<EditProfile/>}></Route>
