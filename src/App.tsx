@@ -6,11 +6,14 @@ import Navbar from './components/common/Navbar';
 import PostPage from './components/PostPage';
 import Add from './components/Add';
 import EditProfile from './components/EditProfile';
+import {Login, balance } from './helpers/web3auth'
 
 
 const App: React.FC = () => {
 return (
 <div>
+    <button onClick={Login}>Login</button>
+    <button onClick={balance} > ballence</button>
 <Router>
 <Navbar />
 <Routes>
@@ -24,4 +27,4 @@ return (
 }
 
 
-export default App;
+export default App;w

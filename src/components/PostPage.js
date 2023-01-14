@@ -84,7 +84,6 @@ const handleAddComment = () => {
                     <div className="post-page__creator">
                         
                         <button className="post-page__follow-btn" onClick={handleFollow}>{isFollowing ? "Unfollow" : "Follow"}</button>
-                       
                     </div>
                 </div>
                 <div className="post-page__content">
