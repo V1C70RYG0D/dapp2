@@ -1,10 +1,10 @@
-import React from 'react'
-import {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import searchicon from "..//..//Assets/Search icon.png"
 import closeimg from "..//..//Assets/Close icon.png"
 import "./blogcard.css"
 import Blogcardcommon from '../common/Blogcardcommon'
 import { motion } from "framer-motion";
+import data from '../../dummy.json'
 
 const searchVariants = {
   hidden: { x: -100, opacity: 0 },
@@ -32,8 +32,15 @@ const sortVariants = {
 
 const Blogcard = () => {
     const [searchvalue, setSearchvalue]=useState('');
-   const clearvalue=()=>{
-    setSearchvalue('Search writers, blogs')
+    const [filteredData, setFilteredData] = useState(data);
+
+    useEffect(() => {
+        const filtered = data.filter(item => item.name.toLowerCase().includes(searchvalue.toLowerCase()));
+        setFilteredData(filtered);
+    }, [searchvalue]);
+
+    const clearvalue=()=>{
+    setSearchvalue('')
      }
 
   return (
@@ -65,12 +72,10 @@ const Blogcard = () => {
    <p>For You</p> 
   </div>
 </motion.div>
-<Blogcardcommon/>
-<Blogcardcommon/>
+<Blogcardcommon data={filteredData}/>
 
-
-    </div>
+  </div>
   )
 }
 
-export default Blogcard
+export default Blogcard 
