@@ -13,14 +13,16 @@ const Blogcardcommon = (props) => {
     const [likeno, setLikeno]=useState(10)
   const [stylecontainer, setStylecontainer]= useState("card-container1")
   const {follower, setFollower} =useContext(DataContext)
+  const [showlink, setShowlink]=useState(false)
   const MAX_LENGTH = 500;
  const handleclick = () => {
-   
+    setShowlink(true)
+  }
 
   return (
     <div>
       {props.data.map((item, i) => (
-        <Link to="/showmore" style= { {textDecoration: 'none'}} ><div key={i} className={stylecontainer}>
+        <div key={i} className={stylecontainer}>
           <div className="card-header1">
             <div className="image-user1">
               <img src={searchicon} alt="" />
@@ -74,7 +76,8 @@ const Blogcardcommon = (props) => {
             </div>
             <div className="card-footerright1">
               <div className="showlink">
-          <button onClick={handleclick} >Show Link On IPFS</button>
+                {showlink ? <div className="ipfslink">{item.ipfs}</div> : null}
+        {showlink ?null:  <button onClick={handleclick} >Show Link On IPFS</button>}
         </div>
               <div className="like1">
                 <img src={likeimg} alt="" onClick={() => {
@@ -90,10 +93,11 @@ const Blogcardcommon = (props) => {
             </div>
           </div>
         </div>
-        </Link>
+        
       ))}
     </div>
   )
 }
+
 
 export default Blogcardcommon;
