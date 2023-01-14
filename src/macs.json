@@ -1,0 +1,63 @@
+[
+{
+    "id" : "1",
+    "name" : "Baohua Yang",
+    "content": {
+        "description" : "Most Blockchain users already know that a blockchain network is a typical distributed system, which consists of a number of decentralized nodes maintaining a copy of a distributed ledger and executing smart contracts. The network achieves trust by enabling multiple members to store a copy of the ledger locally and to only allow updates based on the agreement of the members expressed through the smart contract endorsements and associated policies.But where does this trustworthy data come from? What if someone sends malicious transactions to the blockchain? The answer here is that a practical consensus algorithm will guarantee the data consistency among different members. One of the widest deployed enterprise blockchain frameworks, Hyperledger Fabric (the largest open-source enterprise distributed ledger project hosted by the Linux Foundation and adopted by Oracle Blockchain Platform) enforces a policy mechanism, which requires that before a member can send a transaction to the network, it must collect enough endorsements (implemented as PKI signatures) as defined by policies agreed with other members sharing the same ledger. And once the transaction is sent to the network, the ordering service will cut the batch of transactions into blocks and distribute it to the network nodes. The entire process aims to provide exactly what the consensus does here – to allow different members of a distributed system to have the same global view of the data with continuous updates from multiple sources. Because of its significance, consensus is still an important computer science research topic in spite of a long history of nearly fifty years' study.",
+        "likes" : "100",
+        "thumbnail": "https://blogs.oracle.com/blockchain/post/oracle-blockchain-platform-adds-the-raft-consensus-algorithm",
+        "tags" : ["Principal Architect"],
+        "title" : "Oracle Blockchain Platform adds the Raft Consensus Algorithm",
+        "time" : "September 30, 2020 "
+
+    },
+    "profilepic" : "https://blogs.oracle.com/content/published/api/v1.1/assets/CONT23E741F76EAC4ECD93ECE1EFD721EB6D/Thumbnail?cb=_cache_af4c&format=jpg&channelToken=23dcd1b04a6f4bedbfe37fb8181fd098",
+    "folowers" : "157"
+
+},
+{
+    "id" : "2",
+    "name" : "JMary Hall",
+    "content": {
+        "description" : "Our world runs on data. Every transaction we make requires verification and is often performed by a centralized body. Such a system results in a power imbalance of approvers vs. the approved, thereby limiting participation and collaboration. When you look at the verification of any transaction, it generally involves a simple check based on most recent data. For example, a money transfer from party A to B involves a check of the current account balance of A and the authentication that party A indeed wants to transfer the specified amount to party B. This type of transaction also involves identity verification of Party A and B.  All these steps in the fund transfer can be automated with the help of a technology that provides secured democratization of data with programmability of transaction logic. Blockchain is that technology.The sale of fraudulent goods, costly finance fees for transactions and data breaches have the most impact on the underrepresented and economically disadvantaged who are unable to afford the increases in goods and services that these problems create. The power of Blockchain, with data that is decentralized and available to all permissions parties,  resides in it's ability to enhance collaboration via reliable data. . Built upon the premise of collaboration, the technology facilitates a balance of power among all parties.Register for the webcast \"Blockchain for Social Impact & Sustainability\" to hear a good overview of how Blockchain technology can help solve some of the world’s toughest problems.  To learn more about Blockchain and the Oracle Blockchain Platform, visit Oracle Blockchain on the web. ",
+        "likes" : "84",
+        "thumbnail": "https://blogs.oracle.com/blockchain/post/blockchain-for-social-impact-virtual-conference",
+        "tags" : ["BlockChain Product marketing"],
+        "title" : "Blockchain for Social Impact Virtual Conference",
+        "time" : "September 23, 2020"
+
+    },
+    "profilepic" : "https://blogs.oracle.com/content/published/api/v1.1/assets/CONTE531EE0DC0804223AF310A873F2CA759/Thumbnail?cb=_cache_af4c&format=jpg&channelToken=23dcd1b04a6f4bedbfe37fb8181fd098",
+    "folowers" : "100"
+},
+{
+    "id" : "3",
+    "name" : "Lorenzo Cremona",
+    "content": {
+        "description" : "TLooking at sustainability, Blockchain uses in the field of raw material procurement are certainly interesting. Through the Circulor project, for example, Volvo Cars tracks the materials used to produce lithium-ion batteries, such as cobalt, its physical characteristics, the chain of custody and other information, useful for verifying compliance with the guidelines of the OECD in relation to the supply chain. Applications in the agri-food sector are interesting, such as with Clear Food, which integrates Oracle's Blockchain to record every activity carried out along the entire production chain in an immutable and transparent way, from the farmer to the final consumer. Speaking of economic sustainability, in a constantly evolving market where it is necessary to have innovative tools useful to overcome the uncertainties related to the issue of bad loans, consider NPlus, an independent marketplace for the management of Non Performing Loans, or the so-called \"impaired loans\", which can be exchanged quickly. Another interesting area of application is that of intellectual property and patents. Quinaryo has proposed a solution based on Oracle Blockchain Platform, designed for the Italian pharmaceutical sector, but which extends to the solution dedicated to procurement as well to other sectors, for example industrial and public, for the management of the register of suppliers and tenders through Smart Contracts, as well as the tracking of the supply of critical materials.Last, certainly not least, the health sector where data exchange is fundamental and must be protected. If we look at this COVID-19 emergency and the contribution of the various stakeholders to the identification of a vaccine, we can say that Blockchain has played an interesting role in this case too, allowing it to participate in various subjects to contribute in a traced and safe way and thus speed up the process of testing.a",
+        "likes" : "100",
+        "thumbnail": "https://blogs.oracle.com/blockchain/post/the-future-of-decision-making-voting-with-blockchai",
+        "tags" : [" Outbound Product Management", "Oracle Blockchain Platform"],
+        "title" : "Blockchain Adoption: Supply Chain and Sustainability Applications",
+        "time" : "July 30, 2020 "
+
+    },
+    "profilepic" : "https://blogs.oracle.com/content/published/api/v1.1/assets/CONTA876F0113DCE49B8890219C227091878/Thumbnail?cb=_cache_af4c&format=jpg&channelToken=23dcd1b04a6f4bedbfe37fb8181fd098",
+    "folowers" : "100"
+},
+{
+    "id" : "4",
+    "name" : "John",
+    "content": {
+        "description" : "To increase citizen participation, a group of scientists, businesses and non-profits created a virtual municipality that would be able to move fast and innovate without any of the traditional hurdles. Vaardam is the first virtual municipality in the Netherlands. They are exploiting a range of Oracle technologies to encourage citizen participation in government decision-making that is transparent, resistant to fraud and easy to use – and can be applied to many other business use cases.A formal structure for decision-making was required – and they deployed a digital identity and voting application using blockchain technology on the Oracle platform to facilitate this.  Various key design decisions were made along the way in order to ensure the decision-making could be from a trusted digital identity, anonymous and tamper-proof.  A formal structure to facilitate decision-making, including voting, needs to adhere to at least the following requirements: It should make use of a trusted digital identity Votes should be anonymous There should only be one vote per citizen It should be tamper-proof.To facilitate the decision-making process and to offer a platform for “real organizations”, the initiative developed a solution that enables participation that is transparent and resistant to fraud developed with the Oracle Blockchain Platform. To learn more about this use case, read the full article by Lonneke Dikmans in the UK IOUG Magazine, Pass the Knowledge (PTK).",
+        "likes" : "100",
+        "thumbnail": "https://blogs.oracle.com/blockchain/post/the-future-of-decision-making-voting-with-blockchain",
+        "tags" : ["Blockchain Product Marketing"],
+        "title" : "The Future of Decision Making & Voting with Blockchain",
+        "time" : "June 30, 2020 "
+
+    },
+    "profilepic" : "https://blogs.oracle.com/content/published/api/v1.1/assets/CONTE531EE0DC0804223AF310A873F2CA759/Thumbnail?cb=_cache_af4c&format=jpg&channelToken=23dcd1b04a6f4bedbfe37fb8181fd098",
+    "folowers" : "100"
+}
+]

@@ -4,7 +4,7 @@ import closeimg from "..//..//Assets/Close icon.png"
 import "./blogcard.css"
 import Blogcardcommon from '../common/Blogcardcommon'
 import { motion } from "framer-motion";
-import data from '../../dummy.json'
+import data from '../../macs.json'
 
 const searchVariants = {
   hidden: { x: -100, opacity: 0 },

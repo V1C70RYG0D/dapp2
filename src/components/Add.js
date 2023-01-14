@@ -1,3 +1,4 @@
+import { Link, link } from 'react-router-dom';
 import React, { useContext, useState } from 'react';
 import DataContext from '../Context/datacontext';
 import './Add.css';
@@ -6,6 +7,11 @@ import './Add.css';
 const AddBlog = () => {
   const {visible, setVisible} = useContext(DataContext);
 
+  const handleclick = () => {
+    // link to profile
+
+    setVisible(false);
+  };
   return (
 
     <>
@@ -15,7 +21,7 @@ const AddBlog = () => {
     <div className="add-blog">
       <div className="add-blog__header">
         <h2>Add New Blog</h2>
-        <p onClick={() => setVisible(false)}>X</p>
+        <button onClick={() => handleclick()}>X</button>
       </div>
       <div className="add-blog__banner">
       <label class="button-fil" for="upload">Upload File</label>

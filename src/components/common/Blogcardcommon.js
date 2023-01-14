@@ -7,7 +7,7 @@ import blogimg from "..//..//Assets/blog1.png"
 import "./blogcardcommon.css"
 import DataContext from '../../Context/datacontext'
 import { useContext } from 'react'
-import data from '../../dummy.json'
+import data from '../../macs.json'
 
 const Blogcardcommon = (props) => {
     const [likeno, setLikeno]=useState(10)
@@ -73,7 +73,7 @@ const Blogcardcommon = (props) => {
             <div className="card-footerright1">
               <div className="like1">
                 <img src={likeimg} alt="" onClick={() => {
-                  setLikeno(item.content.likes + 1)
+                  item.content.likes = item.content.likes + 1
                 }} />
                 <div className="likescount1">{item.content.likes}</div>
               </div>

@@ -14,7 +14,7 @@ import HomePage from './components/Home/Home';
 const App: React.FC = () => {
 return (
 <div>
-    
+   
 <Router>
 <Navbar />
 <Routes>
