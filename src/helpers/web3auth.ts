@@ -1,6 +1,6 @@
 import { Web3Auth } from "@web3auth/web3auth";
 import { CHAIN_NAMESPACES } from "@web3auth/base";
-import Web3 from "web3";
+import Web3 from "web3"; //SDSF
 
 // refer to `Getting a provider with web3auth login.` section above
 // to know how `web3auth.provider` is initialized after user's login
