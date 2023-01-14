@@ -36,8 +36,8 @@ nav .logo {
 
 .add {
     position : absolute;
-    width: 14vw ;
-    height: 2vh;
+    /* width: 14vw ; */
+    /* height: 2vh; */
     left : 83%;
     right: 17%;
     
@@ -48,12 +48,33 @@ nav .logo {
     width: 2.5vw ;
     height: 2.5vh;
     left : 93.61%;
+    font-size: medium;
     right: 4.44%;
-    border: 0.5px solid #797979;
 }
-.plus-icon {
-    position : absolute;
-    left: 78.61%;
-    right: 19.44%;
-    border: 2px solid #000000;
+.logbtn-logout{
+    margin-left:62vw;
+}
+
+.logbtn-login{
+    margin-left:78vw;
+}
+.rightbtns{
+    align-items: center;
+    display: flex;;
+}
+.addbtn
+{
+    width:20vw;
+    display: flex;
+    align-items: center;
+}
+.plus{
+    width: 2vw;
+    height: 3vh;
+
+}
+.addtxt{
+    margin-left: 12px;
+    color:black;
+    font-size: medium;
 }
