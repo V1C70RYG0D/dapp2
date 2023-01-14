@@ -9,6 +9,7 @@ import editicon from "..//..//Assets/edit.png"
 import removeicon from "..//..//Assets/delete.png"
 import DataContext from '../../Context/datacontext'
 import { useContext } from 'react'
+import EditProfile from '../EditProfile'
 
 const Profile = () => {
 
@@ -16,10 +17,16 @@ const Profile = () => {
     const MAX_LENGTH=250;
 const [styleblog ,setStyleblog] = useState('card-container');
 const {follower, setFollower}= useContext(DataContext);
+const {edit, setEdit} = useContext(DataContext);
 
     return (
-    <div className='profile-container'>
+    <> {edit ? <EditProfile/>
+    :
+ " "
+    }
+    <div  className={edit ?  'profile-container blur-in' : 'profile-container'  } >
    <div className="profile-left">
+    <div className="profile-left1">
 <div className="profile-leftimg">
     <img src={blogimg} alt="" />
     <h1>Priyanshu Mehra</h1>
@@ -34,13 +41,27 @@ Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna ali
 {follower} Followers  |  3 Following
 </div>
 <div className="editprofile-btn">
-  <button className="editt">
+  <button className="editt"
+   onClick={ ()=>
+    {
+      setEdit(true);
+    }            
+               }>
     Edit Profile
   </button>
 </div>
+</div>
+
+<div className="account-details">
+Account Id :  Change Account
+0x6825d7D26f975DAb3B2f8e691273C6C65CB65DbD
+Account Balance : 0.1234 Eth
+</div>
    </div>
+  
    <div className="profile-right">
-    <h1>My Blogs</h1>
+    <div className="profile-right-heading">
+      My Blogs</div> 
    <div className={styleblog}>
      <div className="contentimg">
     <div className="img-blog">
@@ -62,9 +83,11 @@ Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna ali
         }
       </div>
     <br />
-  <p>
+ <div className="uploaddate">
+
   Uploaded on : 13 January, 2022
-  </p>
+ </div>
+ 
   <div className="prof-icons">
   <div>
            <img src={editicon} className="editicon" alt="" /> <span className='eddit'>Edit </span>
@@ -100,6 +123,9 @@ Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna ali
       </div>
       <div className="card-footerright">
         <div className="like">
+        <div className="mint-btn">
+          <button className="int">MINT</button>
+        </div>
           <img src={likeimg} alt=""/>
           <div className="likescount">10</div>
         </div>
@@ -164,6 +190,9 @@ Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna ali
       </div>
       </div>
       <div className="card-footerright">
+        <div className="mint-btn">
+          <button className="int">MINT</button>
+        </div>
         <div className="like">
           <img src={likeimg} alt=""/>
           <div className="likescount">10</div>
@@ -173,6 +202,7 @@ Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna ali
   </div>
    </div>
     </div>
+    </> 
   )
 }
 

@@ -55,10 +55,12 @@ const Blogcardcommon = (props) => {
                 )}
               </div>
               <br />
-              <p>
-                {item.content.time}
-              </p>
-            </div>
+             <div className="uploaddate">
+          
+      {item.content.time}
+             </div>
+            
+  </div>
           </div>
           <div className="card-footer1">
             <div className="tagsblogs1">

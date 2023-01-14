@@ -18,6 +18,7 @@ border: 1px solid #4C5ADC;
 }
 .username1{
     margin-left: 3vw;
+    font-size: 12px;
 }
 .share-btn1 button{
     margin-left: 48vw;
@@ -63,7 +64,7 @@ font-size: 10px;
 align-items: center;
 text-align: center;
 justify-content: center;
-margin-right: 1.5vw;
+margin-right: 1vw;
 
 }
 .card-footerright1{
@@ -84,9 +85,10 @@ font-size: 16px;
 line-height: 24px;
 color: #0A0B0F;
 }
-.content-blog1 p{
+.uploaddate{
     font-weight: 600;
     font-size: 18px;
+    margin-left: 0;
     color: #4C5ADC;
     margin-top: -20px;
 }

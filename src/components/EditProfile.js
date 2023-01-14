@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import DataContext from '../Context/datacontext';
+import "./EditProfile.css"
 
 const EditProfile = () => {
-    const [visible, setVisible] = useState(false);
+    const {edit, setEdit} = useContext(DataContext);
     const [name, setName] = useState('');
     const [bio, setBio] = useState('');
     const [profilePic, setProfilePic] = useState('');
@@ -42,26 +44,38 @@ const EditProfile = () => {
     
 
     return (
-        <div className={`edit-profile ${visible ? 'visible' : ''}`}>
+          <> <div className="overlay"></div>
+        <div className="edit-profile-container">
             <div className="edit-profile__header">
                 <h2>Edit Profile</h2>
-                <button onClick={() => setVisible(false)}>X</button>
+                <div > <p  onClick={() => setEdit(false)}>X</p>
+                </div>
             </div>
             <div className="edit-profile__content">
                 <div className="edit-profile__picture">
                     <img src={profilePic} alt="profile" />
-                    <input type="file" accept="image/*" onChange={handleImageChange} />
+                  <input type="file" accept="image/*" onChange={handleImageChange} className="igm" />
                 </div>
                 <div className="edit-profile__details">
                     <input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
                     <textarea placeholder="Add your bio" value={bio} onChange={e => setBio(e.target.value)} />
-                </div>
+                  
+                <div className="inputcurrency">    Desired Currency : 
+               <span><select name="" id="" className='selectpopup'>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                 </select></span>
+               
+                  </div>
             </div>
+                </div>
             <div className="edit-profile__footer">
-                <button onClick={() => setVisible(false)}>Cancel</button>
+                <button onClick={() => setEdit(false)}>Cancel</button>
                 <button onClick={handleSave}>Save</button>
             </div>
         </div>
+        </> 
     );
 };
 
