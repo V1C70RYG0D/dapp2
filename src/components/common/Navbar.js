@@ -17,7 +17,7 @@ const Navbar = () => {
         Logout();
         setLog(false);
       }
-    
+    const {visible, setVisible}= useContext(DataContext);
     return (
         <nav>
             <ul>
@@ -32,7 +32,9 @@ const Navbar = () => {
                 <li> <Link to="/add">
                     <div className='addbtn'>
                 <img className="plus" src={plus}/>
-                <p className='addtxt'>Add New Blog</p>
+                <p className='addtxt' onClick={()=>{
+                    setVisible(true)}
+                }>Add New Blog</p>
                     </div>
                 </Link> </li>
                 </div>

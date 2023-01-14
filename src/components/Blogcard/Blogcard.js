@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext,useEffect, useState } from 'react';
+import DataContext from '../../Context/datacontext';
 import searchicon from "..//..//Assets/Search icon.png"
 import closeimg from "..//..//Assets/Close icon.png"
 import "./blogcard.css"
 import Blogcardcommon from '../common/Blogcardcommon'
 import { motion } from "framer-motion";
 import data from '../../macs.json'
+import AddBlog from '../Add'
+
 
 const searchVariants = {
   hidden: { x: -100, opacity: 0 },
@@ -31,6 +34,7 @@ const sortVariants = {
 };
 
 const Blogcard = () => {
+  const {visible, setVisible} = useContext(DataContext);
     const [searchvalue, setSearchvalue]=useState('');
     const [filteredData, setFilteredData] = useState(data);
 
@@ -44,6 +48,9 @@ const Blogcard = () => {
      }
 
   return (
+<>
+    
+
   <div className="blogcard-wrapper">
      <motion.div variants={searchVariants} initial="hidden" animate="visible" className="searchbar">
        <img src={searchicon} className='searchimg' alt="" />
@@ -75,6 +82,8 @@ const Blogcard = () => {
 <Blogcardcommon data={filteredData}/>
 
   </div>
+  </>
+
   )
 }
 

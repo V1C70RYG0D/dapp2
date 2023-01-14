@@ -77,4 +77,5 @@ nav .logo {
     margin-left: 12px;
     color:black;
     font-size: medium;
+    cursor: pointer;
 }

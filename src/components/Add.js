@@ -2,6 +2,7 @@ import { Link, link } from 'react-router-dom';
 import React, { useContext, useState } from 'react';
 import DataContext from '../Context/datacontext';
 import './Add.css';
+import Blogcard from './Blogcard/Blogcard';
 
 
 const AddBlog = () => {
@@ -15,7 +16,10 @@ const AddBlog = () => {
   return (
 
     <>
-    <div className="overlay">
+    {
+      visible ? 
+      <>
+<div className="overlay">
       
       </div>
     <div className="add-blog">
@@ -39,7 +43,10 @@ const AddBlog = () => {
         </div>
      </div>
       </div>
-   
+   </> :
+   <Blogcard/>
+    }
+    
     </>
   );
 };
