@@ -3,10 +3,7 @@ import searchicon from "..//..//Assets/Search icon.png"
 import closeimg from "..//..//Assets/Close icon.png"
 import "./blogcard.css"
 import Blogcardcommon from '../common/Blogcardcommon'
-import DataContext from '../../Context/datacontext';
-import { useContext } from 'react';
 import { motion } from "framer-motion";
-import AddBlog from '../Add'
 import data from '../../dummy.json'
 
 const searchVariants = {
@@ -45,13 +42,8 @@ const Blogcard = () => {
     const clearvalue=()=>{
     setSearchvalue('')
      }
-     const {visible, setVisible}= useContext(DataContext);
 
   return (
-    <>
-    {
-      visible ? <AddBlog/> : 
-   
   <div className="blogcard-wrapper">
      <motion.div variants={searchVariants} initial="hidden" animate="visible" className="searchbar">
        <img src={searchicon} className='searchimg' alt="" />
@@ -80,11 +72,9 @@ const Blogcard = () => {
    <p>For You</p> 
   </div>
 </motion.div>
-<Blogcardcommon/>
-<Blogcardcommon/>
+<Blogcardcommon data={filteredData}/>
 
-
-    </div>
+  </div>
   )
 }
 
