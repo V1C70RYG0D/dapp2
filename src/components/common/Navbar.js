@@ -25,8 +25,7 @@ const Navbar = () => {
                 <li> <Link to="/"> <img src= "" alt= "Logo"/> </Link> </li>
                 </div>
                 <div className="logged">
-                {
-        (log?(
+        
             <div className='rightbtns'>
             <button onClick={logout} className="logbtn-logout">Logout</button>
             <div className="add">
@@ -41,13 +40,10 @@ const Navbar = () => {
                 <li> <Link to="/profile">Profile</Link> </li>
                 </div>
           </div>
-        ):
-        (
+      
             <button className="logbtn-login" onClick={login}>Login</button>
           
-        ))
-      }
-                </div>
+         </div>
                 
             </ul>
         </nav>
