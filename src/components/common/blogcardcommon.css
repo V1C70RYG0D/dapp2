@@ -1,0 +1,128 @@
+.card-container1{
+    margin-top: 4vh;
+    width: 84vw;
+    height: 40vh;
+    margin-left: 8vw;
+    background: #FFFFFF;
+box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+.cardmove{
+    display: none;
+}
+.card-header1{
+    height: 7vh;
+    display: flex;
+}
+.line-header1{
+border: 1px solid #4C5ADC;
+}
+.username1{
+    margin-left: 3vw;
+}
+.share-btn1 button{
+    margin-left: 48vw;
+    margin-top: 1vh;
+    background: rgba(121, 121, 121, 0.12);
+    border: 1px solid #797979;
+    border-radius: 4px;
+    width: 109px;
+    height: 40px;
+    color: #797979;
+cursor: pointer;
+}
+.Follow-btn1 button{
+    margin-left: 3vw;
+    width: 109px;
+    margin-top: 1vh;
+height: 40px;
+color: #FFFFFF;
+background: #0B2144;
+border-radius: 4px;
+cursor: pointer;
+}
+.contentimg1{
+display: flex;
+flex-direction: row;
+}
+.card-footer1{
+display: flex;
+margin-left: 2vw;
+}
+.tagsblogs1{
+    display: flex;
+}
+.tags1{
+    display: flex;
+    background: rgba(76, 90, 220, 0.12);
+border: 1px solid #4C5ADC;
+border-radius: 12px;
+width: 76px;
+height: 22px;
+color: #4C5ADC;
+font-size: 10px;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-right: 1.5vw;
+
+}
+.card-footerright1{
+    display: flex;
+    margin-left: 38vw;
+}
+.img-blog1 img{
+height: 24vh;
+margin: 13px;
+}
+.content-blog1{
+    margin-left: 10px;
+    width: 80%;
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #0A0B0F;
+}
+.content-blog1 p{
+    font-weight: 600;
+    font-size: 18px;
+    color: #4C5ADC;
+    margin-top: -20px;
+}
+.cont1 span{
+    list-style: none;
+    color: #4C5ADC;
+    text-decoration: none;
+
+}
+.notintereset-btn1 button{
+    margin-left: 2vw;
+    cursor: pointer;
+    margin-top: -10px;
+    font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+text-align: center;
+color: #4C5ADC;
+border: 1px solid #4C5ADC;
+border-radius: 4px;
+width: 147px;
+height: 39px;
+}
+.like1{
+    display: flex;
+}
+.like1 img{
+cursor: pointer;
+    width: 40px;
+    height: 30px;
+}
+.likescount1{
+    margin: 3px;
+    font-weight: 400;
+font-size: 26px;
+line-height: 23px;
+text-align: center;
+color: #797979;
+}
