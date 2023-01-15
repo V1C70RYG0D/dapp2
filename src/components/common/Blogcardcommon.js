@@ -25,7 +25,7 @@ const Blogcardcommon = (props) => {
         <div key={i} className={stylecontainer}>
           <div className="card-header1">
             <div className="image-user1">
-              <img src={searchicon} alt="" />
+              <img src=" " alt="" />
             </div>
             <div className="username1">
               <p>{item.name}</p>
@@ -50,7 +50,7 @@ const Blogcardcommon = (props) => {
                 {item.content.description.length > MAX_LENGTH ? (
                   <div className='cont1'>
                     {`${item.content.description.substring(0, MAX_LENGTH)}...`}
-                    <Link to={`/content/${i}`}><span>Show more</span> </Link>
+                    <Link to={`/showmore`}><span>Show more</span> </Link>
                   </div>
                 ) : (
                   <div className='cont1'>
@@ -81,9 +81,9 @@ const Blogcardcommon = (props) => {
         </div>
               <div className="like1">
                 <img src={likeimg} alt="" onClick={() => {
-                  item.content.likes = item.content.likes + 1
+                 setLikeno(likeno+1)
                 }} />
-                <div className="likescount1">{item.content.likes}</div>
+                <div className="likescount1">{likeno}</div>
               </div>
               <div className="notintereset-btn1">
                 <button onClick={() => {

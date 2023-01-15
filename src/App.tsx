@@ -19,7 +19,7 @@ return (
 <Navbar />
 <Routes>
     <Route path="/" element={<HomePage/>}></Route>
-<Route path="/showmore" element={<PostPage  />}></Route>
+<Route path="/showmore" element={<PostPage />}></Route>
 <Route path="/add" element ={<Add/>}></Route>
 <Route path="/edit" element ={<EditProfile/>}></Route>
 <Route path='/pages' element={<Blogcard/>}></Route>

@@ -53,7 +53,7 @@ const EditProfile = () => {
             </div>
             <div className="edit-profile__content">
                 <div className="edit-profile__picture">
-                    <img src={profilePic} alt="profile" />
+                    <img src={profilePic}  />
                   <input type="file" accept="image/*" onChange={handleImageChange} className="igm" />
                 </div>
                 <div className="edit-profile__details">
@@ -62,9 +62,9 @@ const EditProfile = () => {
                   
                 <div className="inputcurrency">    Desired Currency : 
                <span><select name="" id="" className='selectpopup'>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
+                <option value="1">Eth</option>
+                <option value="2">BTC</option>
+                <option value="3">SOL</option>
                  </select></span>
                
                   </div>

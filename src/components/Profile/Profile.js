@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna ali
   </p>
 </div>
 <div className="follow-profile">
-{follower} Followers  |  3 Following
+{follower} Followers  |  Nan Following
 </div>
 <div className="editprofile-btn">
   <button className="editt"

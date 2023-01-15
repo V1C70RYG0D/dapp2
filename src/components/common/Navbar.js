@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import './Navbar.css';
 import { useContext } from 'react';
 import plus from "..//..//Assets/plus.png"
+import logo from "..//..//Assets/logo.png"
 import DataContext from '../../Context/datacontext';
 import { Login, Logout } from '../../helpers/web3auth';
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
         <nav>
             <ul>
                 <div className="logo">
-                <li> <Link to="/"> <img src= "" alt= "Logo"/> </Link> </li>
+                <li> <Link to="/"> <img src={logo} alt= "Logo"/> </Link> </li>
                 </div>
                 <div className="logged">
         

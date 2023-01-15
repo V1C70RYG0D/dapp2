@@ -22,6 +22,10 @@ height: 600px;
 .add-blog__header h2{
     font-size: 28px;
 }
+.add-blog__header button{
+margin-left: 60vw;
+height:4vh;
+}
 .add-blog__header p{
     margin-left: 59vw;
     margin-top: 3.5vh;
